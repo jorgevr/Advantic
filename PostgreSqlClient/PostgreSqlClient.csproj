@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA25D461-ADC0-4441-BF82-4AEA3F65D91C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PostgreSqlClient</RootNamespace>
+    <AssemblyName>PostgreSqlClient</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionProvider\PostgreSqlConnectionProvider.cs" />
+    <Compile Include="Entities\Cell.cs" />
+    <Compile Include="Entities\Appliance.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Weather.cs" />
+    <Compile Include="Entities\Gateway.cs" />
+    <Compile Include="Entities\Manufacturer.cs" />
+    <Compile Include="Entities\LoadType.cs" />
+    <Compile Include="Entities\SuperCategory.cs" />
+    <Compile Include="Entities\SubCategory.cs" />
+    <Compile Include="Entities\Room.cs" />
+    <Compile Include="Entities\Currency.cs" />
+    <Compile Include="Entities\MacroCell.cs" />
+    <Compile Include="Entities\Device.cs" />
+    <Compile Include="Entities\Measure.cs" />
+    <Compile Include="Entities\MeasureType.cs" />
+    <Compile Include="Entities\UnitType.cs" />
+    <Compile Include="Interfaces\IMeasure.cs" />
+    <Compile Include="Queries\CellQuery.cs" />
+    <Compile Include="Queries\ApplianceQuery.cs" />
+    <Compile Include="Queries\CategoryQuery.cs" />
+    <Compile Include="Queries\WeatherQuery.cs" />
+    <Compile Include="Queries\SuperCategoryQuery.cs" />
+    <Compile Include="Queries\SubCategoryQuery.cs" />
+    <Compile Include="Queries\ManufacturerQuery.cs" />
+    <Compile Include="Queries\LoadTypeQuery.cs" />
+    <Compile Include="Queries\GatewayQuery.cs" />
+    <Compile Include="Queries\RoomQuery.cs" />
+    <Compile Include="Queries\CurrencyQuery.cs" />
+    <Compile Include="Queries\MacroCellQuery.cs" />
+    <Compile Include="Queries\UnitTypeQuery.cs" />
+    <Compile Include="Queries\MeasureTypeQuery.cs" />
+    <Compile Include="Queries\DeviceQuery.cs" />
+    <Compile Include="Queries\MeasureQuery.cs" />
+    <Compile Include="Repositories\CellRepository.cs" />
+    <Compile Include="Repositories\ApplianceRepository.cs" />
+    <Compile Include="Repositories\CategoryRepository.cs" />
+    <Compile Include="Repositories\WeatherRepository.cs" />
+    <Compile Include="Repositories\SuperCategoryRepository.cs" />
+    <Compile Include="Repositories\SubCategoryRepository.cs" />
+    <Compile Include="Repositories\ManufacturerRepository.cs" />
+    <Compile Include="Repositories\LoadTypeRepository.cs" />
+    <Compile Include="Repositories\GatewayRepository.cs" />
+    <Compile Include="Repositories\RoomRepository.cs" />
+    <Compile Include="Repositories\CurrencyRepository.cs" />
+    <Compile Include="Repositories\MacroCellRepository.cs" />
+    <Compile Include="Repositories\UnitTypeRepository.cs" />
+    <Compile Include="Repositories\MeasureTypeRepository.cs" />
+    <Compile Include="Repositories\DeviceRepository.cs" />
+    <Compile Include="Repositories\MeasureRepository.cs" />
+    <Compile Include="Validators\WeatherValidator.cs" />
+    <Compile Include="Validators\MeasureValidator.cs" />
+    <Compile Include="Repositories\RepositoryHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Npgsql">
+      <HintPath>.\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

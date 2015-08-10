@@ -1,0 +1,9 @@
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\bin\Debug\PostgreSqlClient.dll.config
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\bin\Debug\PostgreSqlClient.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\bin\Debug\PostgreSqlClient.pdb
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\bin\Debug\Npgsql.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\bin\Debug\Mono.Security.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\bin\Debug\Npgsql.xml
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\obj\x86\Debug\PostgreSqlClient.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\obj\x86\Debug\PostgreSqlClient.pdb
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\PostgreSqlClient\obj\x86\Debug\PostgreSqlClient.csprojResolveAssemblyReference.cache

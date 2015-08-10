@@ -1,0 +1,15 @@
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\SOAPClient.dll.config
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\SOAPClient.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\SOAPClient.pdb
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\log4net.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\log4net.xml
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\obj\x86\Debug\SOAPClient.dll
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\obj\x86\Debug\SOAPClient.pdb
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\SOAPClient.dll.config
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\SOAPClient.dll
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\SOAPClient.pdb
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\log4net.dll
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\bin\Debug\log4net.xml
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\obj\x86\Debug\SOAPClient.dll
+C:\WORK\GESTENSIS\MeasuresAdvanticMiddlewareDownloader\SOAPClient\obj\x86\Debug\SOAPClient.pdb
+C:\WORK\WISE_R3\SVN\trunk\Modules\MeasuresAdvanticMiddlewareDownloader\SOAPClient\obj\x86\Debug\SOAPClient.csprojResolveAssemblyReference.cache

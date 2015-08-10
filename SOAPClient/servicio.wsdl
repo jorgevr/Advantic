@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="urn:DataControllerwsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" name="DataController" targetNamespace="urn:DataControllerwsdl">
+  <wsdl:message name="getDataRequest">
+    <wsdl:part name="key" type="xsd:string"/>
+    <wsdl:part name="idsenal" type="xsd:string"/>
+    <wsdl:part name="ini" type="xsd:string"/>
+    <wsdl:part name="fin" type="xsd:string"/>
+    <wsdl:part name="type" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getDataResponse">
+    <wsdl:part name="return" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getLocationsRequest">
+    <wsdl:part name="key" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getLocationsResponse">
+    <wsdl:part name="return" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getDevicesRequest">
+    <wsdl:part name="key" type="xsd:string"/>
+    <wsdl:part name="idlocalizacion" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getDevicesResponse">
+    <wsdl:part name="return" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getSignalsRequest">
+    <wsdl:part name="key" type="xsd:string"/>
+    <wsdl:part name="iddispositivo" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getSignalsResponse">
+    <wsdl:part name="return" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getRequestRequest">
+    <wsdl:part name="key" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="getRequestResponse">
+    <wsdl:part name="return" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:portType name="DataControllerPortType">
+    <wsdl:operation name="getData">
+      <wsdl:documentation></wsdl:documentation>
+      <wsdl:input message="tns:getDataRequest"/>
+      <wsdl:output message="tns:getDataResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <wsdl:documentation></wsdl:documentation>
+      <wsdl:input message="tns:getLocationsRequest"/>
+      <wsdl:output message="tns:getLocationsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getDevices">
+      <wsdl:documentation></wsdl:documentation>
+      <wsdl:input message="tns:getDevicesRequest"/>
+      <wsdl:output message="tns:getDevicesResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSignals">
+      <wsdl:documentation></wsdl:documentation>
+      <wsdl:input message="tns:getSignalsRequest"/>
+      <wsdl:output message="tns:getSignalsResponse"/>
+    </wsdl:operation>
+    <wsdl:operation name="getRequest">
+      <wsdl:documentation></wsdl:documentation>
+      <wsdl:input message="tns:getRequestRequest"/>
+      <wsdl:output message="tns:getRequestResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataControllerBinding" type="tns:DataControllerPortType">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getData">
+      <soap:operation soapAction="urn:DataControllerwsdl#getData" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocations">
+      <soap:operation soapAction="urn:DataControllerwsdl#getLocations" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDevices">
+      <soap:operation soapAction="urn:DataControllerwsdl#getDevices" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSignals">
+      <soap:operation soapAction="urn:DataControllerwsdl#getSignals" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequest">
+      <soap:operation soapAction="urn:DataControllerwsdl#getRequest" style="rpc"/>
+      <wsdl:input>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" namespace="urn:DataControllerwsdl" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataControllerService">
+    <wsdl:port name="DataControllerPort" binding="tns:DataControllerBinding">
+      <soap:address location="http://62.14.244.188/ws/servicio.php?wsdl"/>
+    </wsdl:port>
+  </wsdl:service>
+</definitions>
